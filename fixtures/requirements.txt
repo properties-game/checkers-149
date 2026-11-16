@@ -1,0 +1,2 @@
+# Static AI-BOM fixture only; this repository does not install or import it.
+openai==2.6.1
