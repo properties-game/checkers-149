@@ -8,6 +8,7 @@ not an application or production AI integration.
 | `fixtures/requirements.txt` | OpenAI Python SDK dependency (`openai`), an AI building block |
 | `fixtures/mcp.json` | `microsoft-learn-fixture`, an MCP server configuration |
 | `fixtures/skills/fixture-summary/SKILL.md` | `fixture-summary`, an AI instruction skill with name and description |
+| `fixtures/model-config.json` | `gpt-4.1-mini`, a declared model ID (not model weights) |
 
 Nothing here installs dependencies, starts a server, loads a skill, or calls an
 API. There are no credentials, model weights, executable agents, or CI workflows.
@@ -15,6 +16,9 @@ The MCP file references the public Microsoft Learn documentation endpoint; it
 does not connect to it. Keep these examples under `fixtures/`, rather than in
 assistant auto-discovery configuration directories, and do not enable or execute
 them as part of a scan.
+
+The model configuration is only a static declaration for the scanner; no code
+loads it or sends requests to that model.
 
 ## Checking detection
 
